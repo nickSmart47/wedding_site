@@ -1,31 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Wedding Details</h1>
-    <div class="container d-flex flex-column justify-content-center align-items-center">
-        <h2>Ceremony</h2>
-        <p>St. Ignatius of Antioch Catholic Church</p>
-        <p>Tarpon Springs, FL</p>
-        <p>June 11th, 1:30PM </p><br>
-        {% with %}
-
-    {% set location=(-23.599097,-46.675903) %}
-    {% set style="width:500px;height:500px;"%}
-
-    {{
-    googlemap(
-        "simple-map",
-        location.0, location.1,
-        markers=[location,],
-        style=style
-        )
-    }}
-
-{% endwith %}
+<h1>Wedding Details</h1>
+<div class="container d-flex flex-column justify-content-center align-items-center">
+    <h2>Ceremony</h2>
+    <div class="container d-flex justify-content-center align-items-center">
+        <a class=left target=_blank
+            href="https://www.google.com/maps/place/St+Ignatius+of+Antioch+Roman+Catholic+Church/@28.14676,-82.745039,15z/data=!4m5!3m4!1s0x0:0xd4c6e2d11074c4bc!8m2!3d28.1467595!4d-82.7448791?hl=en-US">
+            <p class=address>St. Ignatius of Antioch Catholic Church<br />715 E Orange St<br />Tarpon Springs, FL 34689</p>
+        </a>
+        <iframe style="border:0" loading="lazy" allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2w8h7QyNwogRvMR0ENHixtQ&key={{config['GOOGLE_MAPS_KEY']}}"></iframe>
     </div>
-    <div class="container d-flex flex-column justify-content-center align-items-center">
-        <h2>Reception</h2>
-        <p>Holiday Inn Harbourside</p>
-        <p>Indian Rocks Beach, FL</p>
-        <p>June 11th, 4:30PM </p>
-    </div>
+    <p>June 11th, 1:30PM </p><br>
+
+</div>
+<div class="container d-flex flex-column justify-content-center align-items-center">
+    <h2>Reception</h2>
+    <p>Holiday Inn Harbourside</p>
+    <p>Indian Rocks Beach, FL</p>
+    <p>June 11th, 4:30PM </p>
+    <iframe style="border:0" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJg-aXJ6H5wogRCDetk6n-RMA&key={{config['GOOGLE_MAPS_KEY']}}"></iframe>
+</div>
 {% endblock %}

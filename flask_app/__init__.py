@@ -6,6 +6,6 @@ app = Flask(__name__)
 
 app.secret_key = "We're getting married! Finally!!"
 
-app.config['GOOGLEMAPS_KEY'] = "AIzaSyDQoVuyT4niuC5N5aor2ydw2r8YqeQmFs8"
+app.config['GOOGLE_MAPS_KEY'] = "AIzaSyDQoVuyT4niuC5N5aor2ydw2r8YqeQmFs8"
 
 GoogleMaps(app, key="AIzaSyDQoVuyT4niuC5N5aor2ydw2r8YqeQmFs8")
