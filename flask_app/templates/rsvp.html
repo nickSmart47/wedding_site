@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+        <h1>RSVP</h1>
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <form action="/guest_rsvp" class = "d-flex flex-column gap-3" method = "POST">
+                <div class="container">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name">
+                </div>
+                <div class="container">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name">
+                </div>
+                <div class="container">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="container">
+                    <input type="radio" name="attending" value = "accepts" checked="checked">
+                    <label for="attending">Accepts</label>
+                    <input type="radio" name="attending" value = "declines">
+                    <label for="attending">Regretfully declines</label>
+                </div>
+                <div class="container">
+                    <label for="number_of_guests">Total Number of Guests:</label>
+                    <select name="number_of_guests">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="container">
+                    <p>Leave us a message below! (optional)</p>
+                    <textarea name="message"cols="40" rows="8"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+{% endblock %}

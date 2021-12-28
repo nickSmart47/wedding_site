@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Wedding Details</h1>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h2>Ceremony</h2>
+        <p>St. Ignatius of Antioch Catholic Church</p>
+        <p>Tarpon Springs, FL</p>
+        <p>June 11th, 1:30PM </p><br>
+        {% with %}
+
+    {% set location=(-23.599097,-46.675903) %}
+    {% set style="width:500px;height:500px;"%}
+
+    {{
+    googlemap(
+        "simple-map",
+        location.0, location.1,
+        markers=[location,],
+        style=style
+        )
+    }}
+
+{% endwith %}
+    </div>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h2>Reception</h2>
+        <p>Holiday Inn Harbourside</p>
+        <p>Indian Rocks Beach, FL</p>
+        <p>June 11th, 4:30PM </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<form class = "d-flex flex-column" action="/admin/auth/validate" method = "POST">
+    <label for="password">Please enter Admin Password below</label>
+    <input type="password" name = "admin_password"><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
