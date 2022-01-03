@@ -44,4 +44,8 @@ def rsvp_success():
 @app.route('/details')
 def details():
     # print(app.config['GOOGLE_MAPS_KEY'])
-    return render_template('details.html', mymap=mymap, sndmap=sndmap)
+    return render_template('details.html')
+
+@app.route('/story')
+def story():
+    return render_template('story.html')

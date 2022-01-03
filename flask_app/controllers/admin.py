@@ -29,4 +29,7 @@ def admin_view():
 
 @app.route('/delete/<int:guest_id>')
 def delete_guest(guest_id):
-    pass
+    Guest.delete_guest(data = {
+        'id' : guest_id,
+    })
+    return redirect('/admin/view')

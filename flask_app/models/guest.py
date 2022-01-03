@@ -41,8 +41,9 @@ class Guest:
         return results
 
     @classmethod
-    def delete_guest():
-        pass
+    def delete_guest(cls, data):
+        query = "DELETE FROM guests WHERE id = %(id)s"
+        result = connectToMySQL("wedding_site_schema").query_db(query, data)
 
     @staticmethod
     def validate_guest_info(data):
