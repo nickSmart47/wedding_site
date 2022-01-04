@@ -1,42 +1,161 @@
+@font-face {
+    font-family: 'Lazy Dog';
+    src: URL('./font/LazyDog.ttf') format('truetype');
+    font-family: 'Metshige';
+    src: URL('./font/metshige.TTF') format('truetype');
+}
+
+
 /* body styles start */
 body {
-    background-color: lavender;
-    background-image: url(images/waterfall_engagement.jpg),
-                    url(images/proposal_photo.jpg);
-    background-position: left top, right top;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 50%;
+    /* background-color: lavender; */
+    background-image: url(images/trees_background_edit.png);
+    /* background-position: left top, left bottom; */
+    /* background-repeat: no-repeat, no-repeat; */
+    background-size: 100%;
 }
 
 
 .wrapper {
-    background-color: white;
-    opacity: .95;
+    background-color: #B1BCA0;
+    opacity: .9125;
 }
 /* body styles end */
 
+/* utility styles start */
 
+.g-0 p{
+    margin: 0;
+}
+
+/* utility styles end */
+/* header styles start */
+
+
+*{
+    font-family: Lucida;
+    font-size: 1.25rem;
+}
+h1{
+    font-family: Lucida ;
+}
+
+h2{
+    font-weight: bold;
+}
+
+/* header styles end */
 /* Nav styles start */
 nav {
     background-color: lavender;
 }
 
+
 .nav-link {
     color: rebeccapurple;
+    font-size: 1rem;
 }
 
 /* Nav styles end */
 
 /* details styles start */
+
 .details img {
-    width: 100%;
-    max-width: 30%;
-    /* height: 100%; */
-    /* max-height: 10%; */
-}
+    float: left;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+} 
 
 .details iframe {
-    width: 50%;
+    width: 100%;
+}
+
+.details a{
+    font-size: 90%;
 }
 /* details styles end */
 
+
+/* img styles */
+
+.home-img{
+    max-width: 40%;
+    max-height: 10%;
+}
+
+.family {
+    max-width: 50%;
+    max-height: 20%;
+}
+
+/* .story { */
+    /* max-width: 100%; */
+    /* max-height: 50%; */
+/* } */
+
+.carousel-inner img {
+    max-width: 40%;
+    max-height: 20%;
+}
+
+#inside-church{
+    max-width: 70%;
+}
+#key-west-room{
+    max-width: 70%;
+}
+
+.accomodations-img {
+    max-width: 90%;
+}
+
+.great-heron img {
+    max-width: 100%
+}
+/* img styles end */
+
+/* text styles start */
+
+.great-heron{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+
+.holiday-inn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* margin-top: */
+}
+
+footer>p{
+    color: lavender;
+    font-size:1rem;
+}
+
+.story p{
+    /* text-indent: 2rem; */
+    font-size:1.1rem;
+}
+
+
+/* text styles end */
+
+.heart {
+    width:200px;
+    background:
+     radial-gradient(circle at 60% 65%, lavender 64%, transparent 65%) top left,
+     radial-gradient(circle at 40% 65%, lavender 64%, transparent 65%) top right,
+     linear-gradient(to bottom left, lavender 43%,transparent 43%) bottom left ,
+     linear-gradient(to bottom right,lavender 43%,transparent 43%) bottom right;
+    background-size:50% 50%;
+    background-repeat:no-repeat;
+    display:inline-block;
+  }
+.heart::before {
+    content:"";
+    display:block;
+    padding-top:100%;
+  }

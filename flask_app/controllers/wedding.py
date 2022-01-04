@@ -49,3 +49,7 @@ def details():
 @app.route('/story')
 def story():
     return render_template('story.html')
+
+@app.route('/accomodations')
+def accomodations():
+    return render_template('accomodations.html')
