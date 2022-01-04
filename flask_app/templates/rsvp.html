@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
         <h1>RSVP</h1>
-        <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="container d-flex flex-column justify-content-center align-items-center p-2">
             {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
@@ -9,7 +9,7 @@
                 {% endfor %}
             {% endif %}
             {% endwith %}
-            <form action="/guest_rsvp" class = "d-flex flex-column gap-3" method = "POST">
+            <form action="/guest_rsvp" class = "d-flex flex-column gap-3 rsvp" method = "POST">
                 <div class="container">
                     <label for="first_name">First Name:</label>
                     <input type="text" name="first_name">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="container">
                     <p>Leave us a message below! (optional)</p>
-                    <textarea name="message"cols="40" rows="8"></textarea>
+                    <textarea name="message"cols="35" rows="5"></textarea>
                 </div>
                 <input type="submit" value="Submit">
             </form>

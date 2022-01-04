@@ -140,6 +140,13 @@ footer>p{
     font-size:1.1rem;
 }
 
+.container label, p {
+    font-size: 1.1rem;
+}
+
+.rsvp .container {
+    padding:.8rem;
+}
 
 /* text styles end */
 
