@@ -118,10 +118,10 @@ nav {
 
 /* img styles */
 
-.home-img{
+/* .home-img{
     max-width: 40%;
     max-height: 10%;
-}
+} */
 
 .family {
     max-width: 50%;
@@ -226,3 +226,22 @@ footer>p{
 
 
 
+/* index styles start */
+
+
+@media screen and (max-width:800px) {
+.index p {
+    font-size: 2.8vw;
+}
+}
+
+@media screen and (min-width:801px) {
+    .index p {
+        font-size: 2.5vw;
+    }
+    }
+    .fill-img {
+        max-height: 90%;
+        max-width: 90%;
+    }
+/* index styles end */
