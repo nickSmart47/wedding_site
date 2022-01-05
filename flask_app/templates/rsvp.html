@@ -9,7 +9,7 @@
                 {% endfor %}
             {% endif %}
             {% endwith %}
-            <form action="/guest_rsvp" class = "rsvp d-flex flex-column gap-3  text-center justify-content-center align-items-center" method = "POST">
+            <form action="/guest_rsvp" class = "rsvp d-flex flex-column gap-3 text-overflow-center justify-content-center align-items-center" method = "POST">
                 <div class="container">
                     <label for="first_name">First Name:</label>
                     <input type="text" name="first_name">
@@ -22,13 +22,17 @@
                     <label for="email">Email Address:</label>
                     <input type="email" name="email">
                 </div>
-                <div class="container">
-                    <input type="radio" name="attending" value = "accepts" checked="checked">
-                    <label for="attending">Accepts</label>
-                    <input type="radio" name="attending" value = "declines">
-                    <label for="attending">Regretfully declines</label>
+                <div class="container d-flex">
+                    <div class="container d-flex justify-content-center align-items-center">
+                        <input type="radio" name="attending" value = "accepts" checked="checked">
+                        <label for="attending">Accepts</label>
+                    </div>
+                    <div class = "container d-flex justify-content-center align-items-center">
+                        <input type="radio" name="attending" value = "declines">
+                        <label for="attending">Regretfully declines</label>
+                    </div>
                 </div>
-                <div class="container">
+                <div class="container d-flex justify-content-center align-items-center gap-2">
                     <label for="number_of_guests">Total Number of Guests:</label>
                     <select name="number_of_guests">
                         <option value="1" selected>1</option>
