@@ -29,6 +29,11 @@ body {
 
 /* utility styles start */
 
+
+hr{
+    border: 5px solid rebeccapurple;
+    width: 100%;
+}
 .g-0 p{
     margin: 0;
 }

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class = "m-2">Accomodations</h1>
+<h1 class = "m-2 display-4">Accomodations</h1>
 <div class="container d-flex flex-column justify-content-center align-items-center gap-2 holiday-inn gap-3">
     <div class="container d-flex justify-content-center align-items-center">
         <p>Stay at the reception venue: <span><a href="https:/www.hiharbourside.com">Holiday Inn & Suites Harbourside</a></span>
@@ -10,6 +10,7 @@
     <p>Please note: you must use the Group Code "NSW" when booking at the Holiday Inn to receive complimentary parking.</p>
 </div>
 <div class="container d-flex flex-column justify-content-center align-items-center great-heron gap-3">
+    <hr>
     <p>Stay at a more affordable option, only a 10 minute walk from the Reception venue:</p>
     <a href="https://www.heroninn.com/">The Great Heron Inn</a>
     <img class = "mt-4"src="{{url_for('static', filename='images/great_heron_inn.jpg')}}" alt="Great Heron Inn Picture">
