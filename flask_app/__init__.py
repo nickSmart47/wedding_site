@@ -1,8 +1,11 @@
 from flask import Flask
 from flask_googlemaps import GoogleMaps
 from flask_googlemaps import Map
+import logging
 
 app = Flask(__name__)
+
+logging.basicConfig(filename='record.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 app.secret_key = "We're getting married! Finally!!"
 
