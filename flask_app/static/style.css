@@ -42,8 +42,20 @@ textarea {
     width: 100%;
 }
 
+.fill-img {
+    min-width: 100%;
+    min-height: 100%
+}
 
+.text-overflow-center {
+    /* margin-left: -100%; */
+    /* margin-right: -100%; */
+    text-align: center;
+}
 
+a {
+    color:lavenderblush;
+}
 
 
 /* utility styles end */
@@ -52,8 +64,19 @@ textarea {
 
 *{
     font-family: Lucida;
-    font-size: 1.4rem;
+    font-size: 1.4vw;
 }
+
+@media screen and (max-width:800px) {
+    *{
+        font-size: 2.2vw;
+    }
+}
+
+form .container label{
+    font-size: 2.5vw;
+}
+
 h1{
     font-family: Lucida ;
 }
@@ -78,13 +101,11 @@ nav {
 
 /* details styles start */
 
-.details img {
-    float: left;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-} 
 
+.details-img {
+    min-width: 100%;
+    min-height: 100%
+}
 .details iframe {
     width: 100%;
 }
@@ -107,10 +128,7 @@ nav {
     /* max-height: 20%; */
 }
 
-.story{
-    max-width: 30%;
-    /* max-height: 50%; */
-}
+
 
 .carousel-inner img {
     max-width: 40%;
@@ -153,19 +171,10 @@ footer>p{
     font-size:1rem;
 }
 
-.story-text p{
-    /* text-indent: 5vw; */
-    font-size: 2.20vw;
-}
 
-@media screen and (max-width:800px) {
-    .story-text p{
-        font-size: 2vw;
-    }
-}
 
 .container label, p {
-    font-size: 1.1rem;
+    font-size: 2.5vw;
 }
 
 .rsvp .container {
@@ -173,6 +182,27 @@ footer>p{
 }
 
 /* text styles end */
+
+
+
+
+/* story styles start */
+
+.story-text p{
+    /* text-indent: 5vw; */
+    font-size: 2.20vw;
+}
+
+@media screen and (max-width:800px) {
+    .story-text p{
+        font-size: 2.5vw;
+    }
+}
+
+.story{
+    max-width: 30%;
+    /* max-height: 50%; */
+}
 
 .heart {
     width:200px;
@@ -184,16 +214,12 @@ footer>p{
     background-size:50% 50%;
     background-repeat:no-repeat;
     display:inline-block;
-  }
+}
 .heart::before {
     content:"";
     display:block;
     padding-top:100%;
-  }
-
-
-
-/* story styles start */
+}
 
 
 
