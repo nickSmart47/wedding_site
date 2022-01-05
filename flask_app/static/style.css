@@ -154,8 +154,14 @@ footer>p{
 }
 
 .story-text p{
-    /* text-indent: 2rem; */
-    font-size: 1.35rem;
+    /* text-indent: 5vw; */
+    font-size: 2.20vw;
+}
+
+@media screen and (max-width:800px) {
+    .story-text p{
+        font-size: 2vw;
+    }
 }
 
 .container label, p {
