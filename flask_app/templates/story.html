@@ -5,38 +5,43 @@
     <h1 class="m-2">Our Story</h1>
     <div class="heart" style=width:60px></div>
 </div>
-<div class="container gap-3 mt-3">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="container d-flex flex-column justify-content-between gap-3">
-            <img class="img-fluid story" src="{{url_for('static', filename='images/happy_lake.jpg')}}"
-                alt="Waterfall Picture Engagement">
-            <img class="img-fluid story" src="{{url_for('static', filename='images/proposal_photo.jpg')}}"
-                alt="cute pic 2">
-        </div>
-        <div class="container d-flex flex-column story">
+<div class="container-fluid story-container gap-3 mt-3">
+    
+        <div class="container-fluid d-flex justify-content-center align-items-center  gap-3 story-text">
             <p>Nicole has been singing in the St. Ignatius Lifeteen band since 2010. Nick joined the band as the pianist
                 in 2018, but a year and a half passed before they had a conversation that lasted longer than “hey...
                 hi…” If you know Nick, then you'll understand why!
             </p>
+            <img class="img-fluid story" src="{{url_for('static', filename='images/happy_lake.jpg')}}"
+                alt="Waterfall Picture Engagement">
+            
+            </div>
+        <div class="container d-flex justify-content-center align-items-center gap-3 story-text">
+            <img class="img-fluid story" src="{{url_for('static', filename='images/painting_with_twist.jpg')}}"
+                alt="Waterfall Picture Engagement">
             <p>On the Feast of Corpus Christi, Nicole sang the refrain of “Amazing Love” over 20 times while processing
                 around the church. That night, Nick heard Nicole's voice in his dreams. It continued after he awoke, and
                 he found that he could not escape from the sound. This compelled him to finally ask her on a date.
             </p>
+            
+
+        </div>
+        <div class="container-fluid d-flex justify-content-center align-items-center gap-3 story-text">
             <p>
                 That first date led to many other dates, and after 2 years of dates, they decided they should probably
                 just go on dates with each other for the rest of their lives. Nick made it official when he proposed to
                 Nicole in front of Anna Ruby Falls, in Helen, Georgia. You're reading this because Nicole obviously said
                 "yes"!
             </p>
-        </div>
-        <div class="container d-flex flex-column gap-3">
-            <img class="img-fluid story" src="{{url_for('static', filename='images/painting_with_twist.jpg')}}"
-                alt="Waterfall Picture Engagement">
-            <img class="img-fluid story" src="{{url_for('static', filename='images/engagement_restaurant.jpg')}}"
+            <img class="img-fluid story" src="{{url_for('static', filename='images/proposal_photo.jpg')}}"
                 alt="cute pic 2">
+            
         </div>
+
     </div>
-    <div class="container d-flex p-1 justify-content-center align-items-center">
+    <div class="container-fluid d-flex p-1 justify-content-center align-items-center gap-3">
+        <img class="img-fluid story" src="{{url_for('static', filename='images/engagement_restaurant.jpg')}}"
+                alt="cute pic 2">
         <img class="img-fluid family" src="{{url_for('static', filename='images/our_family.jpg')}}"
             alt="big picture here">
     </div>

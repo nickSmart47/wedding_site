@@ -28,13 +28,17 @@ body {
     margin: 0;
 }
 
+
+
+
+
 /* utility styles end */
 /* header styles start */
 
 
 *{
     font-family: Lucida;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 h1{
     font-family: Lucida ;
@@ -86,13 +90,13 @@ nav {
 
 .family {
     max-width: 50%;
-    max-height: 20%;
+    /* max-height: 20%; */
 }
 
-/* .story { */
-    /* max-width: 100%; */
+.story{
+    max-width: 30%;
     /* max-height: 50%; */
-/* } */
+}
 
 .carousel-inner img {
     max-width: 40%;
@@ -135,9 +139,9 @@ footer>p{
     font-size:1rem;
 }
 
-.story p{
+.story-text p{
     /* text-indent: 2rem; */
-    font-size:1.1rem;
+    font-size: 1.35rem;
 }
 
 .container label, p {
@@ -166,3 +170,14 @@ footer>p{
     display:block;
     padding-top:100%;
   }
+
+
+
+/* story styles start */
+
+
+
+/* story styles end */
+
+
+
