@@ -142,9 +142,6 @@ nav {
     max-width: 70%;
 }
 
-.accomodations-img {
-    max-width: 90%;
-}
 
 .great-heron img {
     max-width: 100%
@@ -267,3 +264,19 @@ footer>p{
         }
 
 /* rsvp styles end */
+
+/* accomodations styles start */
+
+
+.accomodations-img {
+    max-width: 90%;
+}
+
+.smaller-text {
+    font-size: 1.5vw;
+}
+
+.accomodations a{
+    font-size: 2.5vw;
+}
+/* accomodations styles end */

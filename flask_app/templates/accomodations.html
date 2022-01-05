@@ -2,18 +2,25 @@
 {% block content %}
 <h1 class = "m-2 display-4">Accomodations</h1>
 <div class="container d-flex flex-column justify-content-center align-items-center holiday-inn gap-3">
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class=" container d-flex justify-content-center align-items-center text-overflow-center accomodations">
         <p>Stay at the reception venue: <span><a href="https:/www.hiharbourside.com">Holiday Inn & Suites Harbourside</a></span>
         </p>
     </div>
     <img class = "img-fluid accomodations-img" src="{{url_for('static', filename='images/accomodations.jpg')}}" alt="accomodations information">
-    <p>Please note: you must use the Group Code "NSW" when booking at the Holiday Inn to receive complimentary parking.</p>
+    <p class = "text-overflow-center smaller-text"><em>Please note: you must use the Group Code "NSW" when booking at the Holiday Inn to receive complimentary parking.</em></p>
 </div>
-<div class="container d-flex flex-column justify-content-center align-items-center great-heron gap-3">
+<div class="container d-flex flex-column justify-content-center align-items-center great-heron gap-3 text-overflow-center accomodations">
     <hr>
-    <p>Stay at a more affordable option, only a 10 minute walk from the Reception venue:</p>
-    <a href="https://www.heroninn.com/">The Great Heron Inn</a>
-    <img class = "mt-4"src="{{url_for('static', filename='images/great_heron_inn.jpg')}}" alt="Great Heron Inn Picture">
+    <p class = "text-overflow-center">Stay next door to the Reception venue :</p>
+    <a href="https://www.newhotelcollection.com/harbourside.php">Harbourside Resort</a>
+    <img class = "mt-2"src="{{url_for('static', filename='images/marker_33.jpg')}}" alt="Harbourside at Marker 33">
 </div>
+<div class="container d-flex flex-column justify-content-center align-items-center great-heron gap-3 text-overflow-center accomodations">
+    <hr>
+    <p class = "text-overflow-center">Stay at a more affordable option, only a 10 minute walk from the Reception venue:</p>
+    <a href="https://www.heroninn.com/">The Great Heron Inn</a>
+    <img class = "mt-2"src="{{url_for('static', filename='images/great_heron_inn.jpg')}}" alt="Great Heron Inn Picture">
+</div>
+
 
 {% endblock %}
