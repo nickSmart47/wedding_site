@@ -9,7 +9,7 @@
                 {% endfor %}
             {% endif %}
             {% endwith %}
-            <form action="/guest_rsvp" class = "d-flex flex-column gap-3 rsvp form-control" method = "POST">
+            <form action="/guest_rsvp" class = "d-flex flex-column gap-3  text-center form-control justify-content-center align-items-center" method = "POST">
                 <div class="container">
                     <label for="first_name">First Name:</label>
                     <input type="text" name="first_name">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="container">
                     <p>Leave us a message below! (optional)</p>
-                    <textarea name="message"cols="35" rows="5"></textarea>
+                    <textarea name="message"cols="30" rows="5"></textarea>
                 </div>
                 <input type="submit" value="Submit">
             </form>

@@ -20,12 +20,21 @@ body {
     background-color: #B1BCA0;
     opacity: .9125;
 }
+
+.form-control {
+    background-color: #B1BCA0;
+    border: 1px #B1BCA0;
+}
 /* body styles end */
 
 /* utility styles start */
 
 .g-0 p{
     margin: 0;
+}
+
+textarea {
+    width: 100%;
 }
 
 
