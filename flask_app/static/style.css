@@ -81,7 +81,7 @@ a {
 }
 
 form .container label{
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 
 h1{
@@ -115,8 +115,11 @@ nav {
 }
 .details iframe {
     width: 100%;
-    min-height: 25vw;
+    min-height: 24vw;
+    /* min-height: 100%; */
 }
+
+
 
 em {
     font-size: 2vw;
@@ -250,20 +253,25 @@ footer>p{
 }
 
 @media screen and (max-width:800px) {
-    .rsvp{
+    .rsvp,
+    .rsvp label{
         font-size: 3vw;
     }
+}
+
+@media screen and (min-width:801px) {
+    .index p {
+        font-size: 2.5vw;
     }
-    
-    @media screen and (min-width:801px) {
-        .index p {
-            font-size: 2.5vw;
-        }
-        }
-        .fill-img {
-            max-height: 90%;
-            max-width: 90%;
-        }
+    }
+    .fill-img {
+        max-height: 90%;
+        max-width: 90%;
+    }
+    .rsvp,
+    .rsvp.container label{
+        font-size: 2vw;
+    }
 
 input[type=radio] {
             /* border: 0px; */
