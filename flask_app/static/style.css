@@ -303,6 +303,13 @@ select {
 }
 /* accomodations styles end */
 
+/* registry styles start */
+
+.registry a{
+    font-size: 2.5vw;
+}
+
+/* registry styles end */
 
 @media screen and (min-width:801px) {
     .index {

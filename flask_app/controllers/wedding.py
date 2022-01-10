@@ -53,3 +53,7 @@ def story():
 @app.route('/accomodations')
 def accomodations():
     return render_template('accomodations.html')
+
+@app.route('/registry')
+def registry():
+    return render_template('registry.html')
