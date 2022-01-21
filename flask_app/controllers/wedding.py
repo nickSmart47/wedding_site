@@ -28,7 +28,7 @@ def guest_rsvp():
         "number_of_guests": request.form['number_of_guests'],
         "message": request.form['message']
     }
-    print(data)
+    # print(data)
     if Guest.validate_guest_info(data):
         new_guest = Guest.register_guest(data)
         return redirect("/rsvp/success")
@@ -50,9 +50,9 @@ def details():
 def story():
     return render_template('story.html')
 
-@app.route('/accomodations')
-def accomodations():
-    return render_template('accomodations.html')
+@app.route('/accommodations')
+def accommodations():
+    return render_template('accommodations.html')
 
 @app.route('/registry')
 def registry():
