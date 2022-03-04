@@ -148,3 +148,4 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/flask
 flask_app/config.py
+flask_app/settings.py
