@@ -1,6 +1,7 @@
 from flask_app import app
 from flask import render_template, redirect, request, session, flash
 from flask_app.models.guest import Guest
+from ..settings import admin_password
 
 @app.route('/admin')
 def admin():
@@ -16,7 +17,7 @@ def admin_auth():
 
 @app.route('/admin/auth/validate', methods = ["POST"])
 def admin_auth_validate():
-    if request.form['admin_password'] == "whatupdude2022":
+    if request.form['admin_password'] == admin_password["password"]:
         session['admin'] = 'Valid Admin in Session'
         return redirect('/admin/view')
     else:
