@@ -8,7 +8,7 @@
 
 /* body styles start */
 body {
-    background-image: url(images/trees_background_flipped.jpg);
+    background-image: url(images/trees_background_final.jpg);
     background-size: 100%;
 }
 
@@ -112,11 +112,11 @@ nav {
 }
 
 .registry-img {
-    max-width: 30%;
+    max-width: 50%;
     max-height: 100%;
 }
 .registry-img-two {
-    max-width: 45%;
+    max-width: 50%;
     max-height: 100%;
 }
 
