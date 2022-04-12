@@ -8,10 +8,7 @@
 
 /* body styles start */
 body {
-    /* background-color: lavender; */
     background-image: url(images/trees_background_flipped.jpg);
-    /* background-position: left top, left bottom; */
-    /* background-repeat: no-repeat, no-repeat; */
     background-size: 100%;
 }
 
@@ -52,8 +49,6 @@ textarea {
 }
 
 .text-overflow-center {
-    /* margin-left: -100%; */
-    /* margin-right: -100%; */
     text-align: center;
 }
 
@@ -62,12 +57,9 @@ a {
 }
 
 
-
-
-
 /* utility styles end */
-/* header styles start */
 
+/* header styles start */
 
 *{
     font-family: Lucida;
@@ -93,6 +85,7 @@ h2{
 }
 
 /* header styles end */
+
 /* Nav styles start */
 nav {
     background-color: lavender;
@@ -116,7 +109,6 @@ nav {
 .details iframe {
     width: 100%;
     min-height: 24vw;
-    /* min-height: 100%; */
 }
 
 .registry-img {
@@ -141,14 +133,10 @@ em {
 
 /* img styles */
 
-/* .home-img{
-    max-width: 40%;
-    max-height: 10%;
-} */
+
 
 .family {
     max-width: 50%;
-    /* max-height: 20%; */
 }
 
 
@@ -211,7 +199,6 @@ footer>p{
 /* story styles start */
 
 .story-text p{
-    /* text-indent: 5vw; */
     font-size: 1.5vw;
 }
 
@@ -223,7 +210,6 @@ footer>p{
 
 .story{
     max-width: 30%;
-    /* max-height: 50%; */
 }
 
 .heart {
@@ -285,16 +271,13 @@ footer>p{
     }
 
 input[type=radio] {
-            /* border: 0px; */
             width: 100%;
             height: 2vw;
         }
 
 select {
-            /* border: 0px; */
             width: 15%;
             height: 3vw;
-            /* height: 100%; */
         }
 /* rsvp styles end */
 
@@ -338,7 +321,6 @@ select {
     font-size: 2.8vw;
 }
 }
-
 
 
 
