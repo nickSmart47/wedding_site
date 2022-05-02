@@ -335,3 +335,8 @@ html, body #map{
     height:100%;
     width: 100%;
 }
+
+small {
+    font-size:  .75rem;
+    vertical-align: text-top;
+}
