@@ -10,10 +10,12 @@
 body {
     background-image: url(images/trees_background_final.jpg);
     background-size: 100%;
+    
 }
 
 
 .wrapper {
+    margin-top: 4vw;
     background-color: #B1BCA0;
     opacity: .9125;
 }
@@ -89,7 +91,27 @@ h2{
 /* Nav styles start */
 nav {
     background-color: lavender;
+    overflow-x:hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: auto; /* Full width */
+    align-items: center;
+    opacity: .4;   
 }
+
+/* Links inside the navbar */
+.navbar a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: lavenderblush;
+  }
 
 
 .nav-link {
