@@ -2,12 +2,12 @@
     <div class="container-fluid">
         <div class="d-flex justify-content-center container" id="navbarNavAltMarkup">
             <div class="navbar d-flex justify-content-center align-items-center">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-                <a class="nav-link" href="/story">Our Story</a>
-                <a class="nav-link" href="/details">Details</a>
-                <a class="nav-link" href="/accommodations">Accommodations</a>
-                <a class="nav-link" href="/registry">Registry</a>
-                <a class="nav-link" href="/rsvp">RSVP</a>
+                <a class="nav-link anchor active" aria-current="page" href="{{ url_for('.index', _anchor='home') }}">Home</a>
+                <a class="nav-link anchor" href="{{ url_for('.index', _anchor='story') }}">Our Story</a>
+                <a class="nav-link anchor" href="{{ url_for('.index', _anchor='details') }}">Details</a>
+                <a class="nav-link anchor" href="{{ url_for('.index', _anchor='accommodations') }}">Accommodations</a>
+                <a class="nav-link anchor" href="{{ url_for('.index', _anchor='registry') }}">Registry</a>
+                <a class="nav-link anchor" href="{{ url_for('.index', _anchor='rsvp') }}">RSVP</a>
             </div>
         </div>
     </div>

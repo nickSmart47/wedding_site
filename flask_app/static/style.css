@@ -63,6 +63,10 @@ a {
 
 /* header styles start */
 
+#home {
+    scroll-margin-top: 1.75em;
+}
+
 *{
     font-family: Lucida;
     font-size: 1.2vw;
@@ -96,7 +100,6 @@ nav {
     top: 0; /* Position the navbar at the top of the page */
     width: auto; /* Full width */
     align-items: center;
-    opacity: .4;   
 }
 
 /* Links inside the navbar */
@@ -123,7 +126,9 @@ nav {
 
 /* details styles start */
 
-
+#details {
+    scroll-margin-top: 1.75em;
+}
 .details-img {
     min-width: 100%;
     min-height: 100%;
@@ -220,6 +225,10 @@ footer>p{
 
 /* story styles start */
 
+#story {
+    scroll-margin-top: 1.75em;
+}
+
 .story-text p{
     font-size: 1.5vw;
 }
@@ -267,6 +276,10 @@ footer>p{
 
 /* rsvp styles start */
 
+#rsvp {
+    scroll-margin-top: 1.75em;
+}
+
 .rsvp .container {
     padding:.8rem;
 }
@@ -303,8 +316,10 @@ select {
         }
 /* rsvp styles end */
 
-/* accomodations styles start */
-
+/* accommodations styles start */
+#accommodations {
+    scroll-margin-top: 1.75em;
+}
 
 .accomodations-img {
     max-width: 90%;
@@ -320,6 +335,10 @@ select {
 /* accomodations styles end */
 
 /* registry styles start */
+
+#registry {
+    scroll-margin-top: 1.75em;
+}
 
 .registry a{
     font-size: 2.5vw;

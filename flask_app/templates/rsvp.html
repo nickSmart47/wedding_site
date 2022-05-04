@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-        <h1>RSVP</h1>
+        <h1 id="rsvp">RSVP</h1>
         <div class="container d-flex flex-column justify-content-center align-items-center p-2">
             {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                    <p>{{message}}</p>
+                    <p class = "text-danger">{{message}}</p>
                 {% endfor %}
             {% endif %}
             {% endwith %}

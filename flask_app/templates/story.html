@@ -2,7 +2,7 @@
 {% block content %}
 <div class="container d-flex justify-content-center align-items-center">
     <div class="heart" style=width:60px></div>
-    <h1 class="m-2">Our Story</h1>
+    <h1 class="m-2" id="story">Our Story</h1>
     <div class="heart" style=width:60px></div>
 </div>
 <div class="container-fluid story-container gap-3 mt-3">
@@ -40,9 +40,9 @@
 
     </div>
     <div class="container-fluid d-flex p-1 justify-content-center align-items-center gap-3">
-        <img class="img-fluid story" src="{{url_for('static', filename='images/engagement_restaurant.jpg')}}"
+        <img class="img-fluid story" src="{{url_for('static', filename='images/engagement_restaurant.avif')}}"
                 alt="cute pic 2">
-        <img class="img-fluid family" src="{{url_for('static', filename='images/our_family.jpg')}}"
+        <img class="img-fluid family" src="{{url_for('static', filename='images/our_family.avif')}}"
             alt="big picture here">
     </div>
 </div>
