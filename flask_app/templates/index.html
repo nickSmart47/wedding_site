@@ -25,5 +25,11 @@
 {% include "accommodations.html" %}
 {% include "registry.html" %}
 {% include "rsvp.html" %}
+   
+{% if section %}
+<script>
+    document.getElementById('{{ section }}').scrollIntoView();
+</script>
+{% endif %}
 {% endblock %}
 
