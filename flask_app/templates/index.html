@@ -28,7 +28,9 @@
    
 {% if section %}
 <script>
-    document.getElementById('{{ section }}').scrollIntoView();
+        $(async function() {
+                $("html, body").animate({ scrollTop: $("#{{ section }}").offset().top }, 500);
+});
 </script>
 {% endif %}
 {% endblock %}

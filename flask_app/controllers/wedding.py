@@ -28,7 +28,6 @@ def guest_rsvp():
         "number_of_guests": request.form['number_of_guests'],
         "message": request.form['message']
     }
-    # print(data)
     if Guest.validate_guest_info(data):
         new_guest = Guest.register_guest(data)
         return redirect("/rsvp/success")
@@ -43,7 +42,6 @@ def rsvp_success():
 
 @app.route('/details')
 def details():
-    # print(app.config['GOOGLE_MAPS_KEY'])
     return render_template('index.html', section='details')
 
 @app.route('/story')
