@@ -3,7 +3,6 @@
 <table class="table">
     <thead>
         <tr>
-            <!-- <th scope="col">#</th> -->
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col"># of Guests</th>
@@ -15,7 +14,6 @@
     <tbody>
         {% for guest in guests %}
         <tr>
-            <!-- <th scope="row">{{guest.id}}</th> -->
             <td>{{guest.first_name}} {{guest.last_name}}</td>
             <td>{{guest.email}}</td>
             <td>{{guest.number_of_guests}}</td>
